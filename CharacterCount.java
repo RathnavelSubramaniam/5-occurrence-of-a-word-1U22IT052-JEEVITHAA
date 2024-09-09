@@ -1,7 +1,5 @@
 import java.util.HashMap;
-
 public class CharacterCount{
-
 public static void main(String[] args) {
 String inputString="HELLO THERE";
 HashMap<Character,Integer>charCountMap=countCharacters(inputString);
@@ -22,13 +20,11 @@ charCountMap.put(c,1);
 }
 }
 }
-
 return charCountMap;
 }
 public static void printCharacterCount(HashMap<Character,Integer>charCountMap) {
 for(char c:charCountMap.keySet()) {
 System.out.println(c+": "+ charCountMap.get(c));
 }
-
 }
 }
